@@ -1,0 +1,100 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: rgb(0, 0, 0);
+}
+.st0{
+   
+     stroke: white;
+     stroke-width: 2px;
+     background-color: transparent;
+    animation: f1 5s ease forwards 3s;
+    transition: f1 5s ease-in-out 2s;
+}
+.st0:nth-child(1)
+{
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: yo 5s ease forwards 1s;
+}
+.st0:nth-child(2)
+{
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: yo 5s ease forwards 1.1s;
+}
+.st0:nth-child(3)
+{
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: yo 5s ease forwards 1.2s;
+}
+.st0:nth-child(4)
+{
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: yo 5s ease forwards 1.4s;
+}
+.st0:nth-child(5)
+{
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: yo 5s ease forwards 1.5s;
+}
+.st0:nth-child(6)
+{
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: yo 5s ease forwards 1.6s;
+}
+.st0:nth-child(7)
+{
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: yo 5s ease forwards 1.8s;
+}
+.st0:nth-child(8)
+{
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: yo 5s ease forwards 2s;
+}
+.st0:nth-child(9)
+{
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: yo 5s ease forwards 2.1s;
+}
+.st0:nth-child(10)
+{
+    stroke-dasharray: 300;
+    stroke-dashoffset: 300;
+    animation: yo 5s ease forwards 2.2s;
+}
+
+
+@keyframes yo {
+    to{
+        stroke-dasharray: 0;
+    }
+    
+}
+@keyframes f1 {
+    from{
+        
+        fill: transparent;
+
+    }
+  to{
+      fill: white;
+  }
+}

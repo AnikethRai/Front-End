@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cool-button</title>
+   <style>
+     *{
+         padding: 0px;
+         margin: 0px;
+         box-sizing: border-box;
+     }
+     body{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background: crimson;
+     }
+    
+     .main{ 
+         margin-top: 30px; ;
+         width: 600px;
+         height: 90vh;
+
+         background: blueviolet;
+         justify-content: center;
+         display: flex;
+         align-items: center;
+         flex-direction: column;
+         position: relative;
+         animation: rocket ease-out !important;
+         animation-delay: 5s;
+         animation-iteration-count: infinite;
+         transition: all 5s ease-in-out;
+         background: transparent;
+     }
+     @keyframes rocket {
+            0%{
+                 transform: rotateX(128deg);
+            }
+            100%{
+                 transform: rotateY(90deg);
+            }
+         }
+
+     
+     .tri{ position: absolute;
+          
+          top: -1%;
+         width: 0px;
+         height: 0px;
+        
+        
+         border-left: 200px solid transparent;
+      border-right: 200px solid transparent;
+      border-bottom: 250px solid silver;
+      border-radius: 0 20px 15px 15px;
+      animation: up ease-in-out;
+      animation-duration: 5s;
+      animation-iteration-count: 1;
+
+        
+     }
+     button{
+         position: absolute;
+        background-position-y: 40px;
+         background-position: center;
+         background-size: cover;
+         background-image: url('./Meh.jpeg');
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 30px;
+         width: 390px;
+         height: 400px;
+         animation: down ease-in-out;
+         animation-duration: 5s;
+      animation-iteration-count: 1;
+
+      
+       
+     }
+     @keyframes up {
+         0%{
+              transform: translate3d(300px, 400px , 400px );
+         }
+         50%{
+            transform: translate3d(42px, -62px, -135px);
+         }
+         100%{
+             transform: translate3d(0px, 0px, 0px);
+         }
+         
+     }
+     @keyframes down {
+        0%{
+              transform: translate3d(-300px, -400px , -400px );
+         }
+         50%{
+            transform: translate3d(-42px, 62px, 135px);
+         }
+         100%{
+             transform: translate3d(0px, 0px, 0px);
+         }
+     }
+     @keyframes side {
+        0%{
+              transform: rotateX(65deg);
+         }
+         50%{
+            transform: rotateY(130deg);
+         }
+         100%{
+             transform: rotate(360deg);
+         }
+     }
+     button::before{
+       
+         display: inline-block;
+         content: '';
+         width: 200px;
+         height: 400px;
+         background-color: lightslategray;
+        
+
+         
+     }
+     button::after{
+       
+         display: inline-block;
+          content: '';
+          width: 200px;
+          height: 400px;
+          background-color: lightslategray;
+     }
+     button:hover::before{
+         opacity: 1;
+         animation: he 5s 1 forwards;
+         transition: transfrom 10s ease-in-out;
+     }
+     button:hover::after{
+         animation: hee 5s 1 forwards;
+         transition: transform 10s ease-in-out;
+     }
+     button:hover{
+         
+         transform: rotate(360deg);
+     }
+     @keyframes he {
+         0%{
+             transform: translateX(0);
+         }
+        
+         100%{
+             transform: translateX(-100%);
+         }
+       
+     }
+     
+     @keyframes hee {
+        0%{
+             transform: translateX(0);
+         }
+        
+        
+         
+         100%{
+             transform: translateX(100%);
+         }
+         
+        }
+        .way{
+            position: absolute;
+             width: 440px;
+             height: 90px;
+             margin: 10px;
+             top: 72%;
+             animation: side ease-in-out;
+             animation-iteration-count: 1;
+             animation-duration: 5s;
+
+            
+      border-bottom: 235px solid burlywood;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+    
+      
+        }
+
+
+   </style>
+</head>
+<body>
+
+    <div class="main">
+        <div class="tri">
+
+        </div>
+   <button></button>
+   <div class="way">
+
+</div>
+    </div>
+   
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEB-14</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display:grid;
+            place-items: center;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(60deg, pink , crimson);
+        }
+            p{
+                background-color: black;
+                width: 100px;
+                height: 100px;
+                color: white;
+            }
+            p::before{
+                content: "hello";
+                display: block;
+                width: 30px;
+                height: 30px;
+                background: white;
+                color: black;
+            }
+            p::after{
+                content: "";
+                display: block;
+                width: 30px;
+                height: 30px;
+                background: white;
+            }
+
+
+          
+    </style>
+</head>
+<body>
+    <p>hello world</p>
+<div></div>
+</body>
+</html>
