@@ -1,0 +1,54 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    text-transform: uppercase;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+h1{ 
+     background-color: white;
+     font-size: 25px;
+     width: max-content;
+     height: max-content;
+     position: relative;
+     animation: throw 5s infinite ease;
+}
+h1::before{
+     content: 'ANIKETH RAI';
+     position: absolute;
+     display: inline-block;
+     width: max-content;
+     height: max-content;
+     
+     top:100%;
+     left: 0%;
+     right: 0%;
+     bottom: 0%;
+     transform: rotateX(-480deg);
+
+}
+@keyframes throw {
+    0%{
+        transform: translateX(0%)  rotate(0deg);
+        filter: hue-rotate(360deg);
+    }
+    25%{
+        transform: translateX(-80%) rotate(-270deg);
+        filter: hue-rotate(360deg);
+    }
+    75%{
+        transform: translateX(80%) rotate(270deg);
+        filter: hue-rotate(360deg);
+    }
+    100%{
+        transform: translateX(0%)  rotate(0deg);
+    }
+    
+}

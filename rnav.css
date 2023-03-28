@@ -1,0 +1,75 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, lightblue,lightgreen);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    list-style: none;
+    position: relative;
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0px 0px 4px rgba(0,0,255,0.2),
+                0px 0px 8px rgba(0,0,255,0.4);
+    
+}
+.toggle{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: black;
+    z-index: 10000;
+    cursor: pointer;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.4)
+                   ,0px 0px 8px rgba(0,0,0,0.8);
+    transition: 1.25s ease-out;
+}
+.toggle ion-icon{
+  color: white;
+}
+.menu.active .toggle{
+    transform: rotate(315deg);
+    box-shadow: none;
+}
+
+.menu li{
+    list-style: none;
+    left: 10px;
+    position: absolute;
+    transform-origin: 100px;
+    transition: transform 500ms ease-in-out;
+    transition-delay: calc(0.1s *var(--i));
+    transform: rotate(0deg) translate(90px);
+    
+}
+.menu.active li{
+    transform: rotate(calc(360deg / 8*var(--i)));
+
+}
+li a ion-icon{
+    border-radius: 50%;
+    color: crimson;
+    box-shadow: inset 0px 0px 5px rgba(0,0,255,0.2),
+                0px 0px 5px rgba(0,0,255,0.4);
+   
+    
+}

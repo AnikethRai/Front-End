@@ -1,0 +1,154 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Licorice&display=swap');
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(60deg,orange,green);
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   position: relative;
+    
+}
+div{
+    position: absolute;
+    top: 35%;
+    font-size: 35px;
+    font-family: 'Licorice', cursive;
+    animation: slide 5s 1 forwards 3s ease;
+    opacity: 0;
+}
+@keyframes slide {
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    
+}
+span{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    animation: rotate ;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    
+    
+}
+@keyframes rotate {
+    0%{
+        transform:rotate(0deg)
+                  translate(-165px)
+                  rotate(0deg) rotateX(0deg);
+      
+      }
+    
+      100%{
+        transform:rotate(360deg) rotateX(180deg)
+                  translate(-165px)
+                  rotate(-360deg);
+      }
+   
+}
+.ring1{
+   left: 20%;
+   background: #0085c7;
+   animation-delay: 0.2s;
+   z-index: 1;
+}
+.ring1::before{
+    width: 80px;
+    height: 80px;
+    content: '';
+    background: linear-gradient(60deg,orange,green);
+    border-radius: 50%;
+   
+    
+
+}
+.ring2{
+   background: black;
+   animation-delay: 0.4s;
+   z-index: 1000;
+
+}
+.ring2::before{
+    width: 80px;
+    height: 80px;
+    content: '';
+    background: linear-gradient(60deg,orange,green);
+    border-radius: 50%;
+    
+
+}
+.ring3{
+    left: 62%;
+    background: crimson;
+    animation-delay: 0.6s;
+    
+
+}
+.ring3::before{
+    width: 80px;
+    height: 80px;
+    content: '';
+    background: linear-gradient(60deg,orange,green);
+    border-radius: 50%;
+    
+
+}
+
+
+
+.ring4{
+    background: yellow;
+    top: 50%;
+    left: 30%;
+    animation-delay: 0.8s;
+
+}
+.ring4::before{
+    width: 80px;
+    height: 80px;
+    content: '';
+    background: linear-gradient(60deg,orange,green);
+    border-radius: 50%;
+    
+
+}
+.ring5{
+     background: forestgreen;
+    top: 50%;
+    left: 52%;
+    animation-delay: 1s;
+
+}
+.ring5::before{
+    width: 80px;
+    height: 80px;
+    content: '';
+    background: linear-gradient(60deg,orange,green);
+    border-radius: 50%;
+    
+
+}
+.h2{
+    position: absolute;
+    top: 80%;
+    left: 80%;
+}
