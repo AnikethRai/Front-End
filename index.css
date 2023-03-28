@@ -1,0 +1,80 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(45deg,pink,violet);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+h1{
+    width:400px;
+    height: max-content;
+    padding: 15px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    border-radius: 25px;
+    border: 1px solid white;
+    box-shadow: 0px 0px 10px white,
+                inset 0px 0px 10px white;
+
+
+}
+#dis{
+    width: auto;
+    height: max-content;
+    font-size: 3em;
+    margin-top: 10px; 
+    color: blueviolet;
+}
+#count-bt{
+    width: 200px;
+    height: max-content;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 25px;
+    background: crimson;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+#count-bt:hover{
+    transition: all 700ms ease;
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 10px rgb(156, 8, 37);
+
+}
+#save-bt{
+    width: 200px;
+    height: max-content;
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: forestgreen;
+    color: white;
+    cursor: pointer;}
+#save-bt:hover{
+    transition: all 700ms ease;
+    transform: translateY(-10px);
+    box-shadow: 0px 15px 10px rgb(11, 104, 11);
+
+}
+p{
+    width: max-content;
+    height: max-content;
+    font-size: 1.25em;
+    margin-top: 20px;
+    font-weight: bold;
+
+}
